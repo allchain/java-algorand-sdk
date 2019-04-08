@@ -298,6 +298,14 @@
                             <pubScmUrl>scm:git:git@github.com:algorand/java-algorand-sdk.git</pubScmUrl>
                             <scmBranch>gh-pages</scmBranch> <!-- branch with static site -->
                         </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>publish-scm</goal>
+                                </goals>
+                                <phase>deploy</phase>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
